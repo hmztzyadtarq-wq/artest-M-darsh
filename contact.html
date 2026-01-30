@@ -12,6 +12,7 @@
       color: #222;
     }
 
+    /* Header */
     header {
       display: flex;
       justify-content: space-between;
@@ -33,7 +34,6 @@
     nav {
       display: flex;
       gap: 1rem;
-      flex-wrap: wrap;
     }
 
     nav a {
@@ -51,13 +51,22 @@
       color: #0077cc;
     }
 
+    /* Contact Section */
     .contact-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 3rem 1rem;
       gap: 2rem;
-      padding: 3rem 2rem;
       max-width: 1200px;
       margin: auto;
+    }
+
+    .contact-form,
+    .social-links {
+      flex: 1 1 400px;
+      max-width: 500px;
     }
 
     .contact-form {
@@ -70,6 +79,7 @@
     .contact-form h2 {
       margin-bottom: 1rem;
       font-size: 1.4rem;
+      text-align: center;
     }
 
     .contact-form label {
@@ -97,16 +107,20 @@
       font-size: 1rem;
       cursor: pointer;
       transition: background-color 0.3s;
+      display: block;
+      margin: auto;
     }
 
     .contact-form button:hover {
       background-color: #005fa3;
     }
 
+    /* Social Links */
     .social-links {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      align-items: center;
     }
 
     .social-card {
@@ -120,6 +134,8 @@
       text-decoration: none;
       color: #222;
       font-weight: bold;
+      width: 100%;
+      max-width: 400px;
     }
 
     .social-card:hover {
@@ -160,25 +176,41 @@
     }
 
     /* Responsive Design */
-    @media (max-width: 992px) {
-      .contact-container {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
       }
 
       nav {
-        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+      }
+
+      .contact-container {
+        flex-direction: column;
+        align-items: center;
       }
 
       .contact-form,
       .social-links {
         width: 100%;
+        max-width: 500px;
+      }
+
+      .social-card {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.2rem;
+      }
+
+      nav a {
+        font-size: 0.95rem;
       }
 
       .contact-form h2 {
@@ -242,6 +274,8 @@
 
 </body>
 </html>
+
+
 
 
 
