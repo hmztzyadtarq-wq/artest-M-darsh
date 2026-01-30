@@ -10,6 +10,7 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: #fafafa;
       color: #222;
+      line-height: 1.6;
     }
 
     header {
@@ -24,11 +25,26 @@
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
     nav a {
-      margin: 0 1rem;
       text-decoration: none;
       color: #333;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0077cc;
     }
 
     nav a.active {
@@ -38,9 +54,11 @@
     .contact-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      padding: 3rem 2rem;
+      justify-content: center;
+      padding: 3rem 1rem;
       gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .contact-form {
@@ -53,6 +71,7 @@
 
     .contact-form h2 {
       margin-bottom: 1rem;
+      font-size: 1.4rem;
     }
 
     .contact-form label {
@@ -79,6 +98,7 @@
       border-radius: 6px;
       font-size: 1rem;
       cursor: pointer;
+      transition: background-color 0.3s;
     }
 
     .contact-form button:hover {
@@ -141,6 +161,42 @@
       font-size: 0.9rem;
       margin-top: 2rem;
     }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 0.5rem;
+      }
+
+      .contact-container {
+        flex-direction: column;
+        padding: 2rem 1rem;
+      }
+
+      .contact-form,
+      .social-links {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.2rem;
+      }
+
+      .contact-form h2 {
+        font-size: 1.2rem;
+      }
+
+      .social-card {
+        font-size: 0.95rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -149,10 +205,8 @@
     <h1>M-darsh</h1>
     <nav>
       <a href="index.html">Home</a>
-      
       <a href="setting.html">Settings</a>
-      
-        <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </header>
 
@@ -200,5 +254,7 @@
 
 </body>
 </html>
+
+
 
 
