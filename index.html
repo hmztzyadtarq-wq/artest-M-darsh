@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darsh Mohamed – Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('background.jpg') no-repeat center top;
+      background-size: cover;
+      color: #222;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+    }
+
+    .circle-portrait {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      border-radius: 50%;
+      overflow: hidden;
+      animation: rotate 10s linear infinite;
+      border: 5px solid #555;
+    }
+
+    .circle-portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .gallery {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f0f0f0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+   <nav>
+   <a href="index.html">Home</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="setting.html">Settings</a>
+</nav>
+
+  </header>
+
+  <section class="hero">
+    <div class="circle-portrait">
+      <img src="photo/WhatsApp Image 2026-01-30 at 5.51.02 PM.jpg.jpeg" alt="Darsh Mohamed Portrait" />
+    </div>
+    <h1>artes:M-darsh</h1>
+    <p>Exploring emotions and stories through colors and brushstrokes.</p>
+  </section>
+
+  <section class="gallery">
+    <img src="photo/WhatsApp Image 2026-01-30 at 6.04.18 PM.jpeg" alt="Sea Turtle Painting" />
+    <img src="photo/WhatsApp Image 2026-01-30 at 6.18.13 PM.jpeg" alt="Volvo Truck Painting" />
+    <img src="photo/WhatsApp Image 2026-01-30 at 6.18.13 PM (2).jpeg" alt="French Bulldog Painting" />
+    <img src="photo/WhatsApp Image 2026-01-30 at 6.18.12 PM.jpeg" alt="Gorilla in Tropical Shirt" />
+    <img src="photo/WhatsApp Image 2026-01-30 at 6.18.11 PM.jpeg" alt="Gangster Duck Painting" />
+    <img src="photo/WhatsApp Image 2026-01-30 at 6.18.11 PM (1).jpeg" alt="Sea Turtle Underwater" />
+    <img src="photo/WhatsApp Image 2026-01-30 at 6.18.08 PM (1).jpeg" alt="African Woman Profile" />
+    <img src="photo/WhatsApp Image 2026-01-30 at 6.18.08 PM.jpeg" alt="Spider-Man Painting" />
+     <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.18.09 PM (1).jpeg" alt="صورة 1"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.04.19 PM.jpeg" alt="صورة 2"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.04.20 PM.jpeg" alt="صورة 3"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.30 PM.jpeg" alt="صورة 4"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.31 PM (1).jpeg" alt="صورة 5"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.31 PM.jpeg" alt="صورة 6"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.38 PM.jpeg" alt="صورة 7"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.40 PM.jpeg" alt="صورة 8"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.43 PM.jpeg" alt="صورة 9"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.44 PM (1).jpeg" alt="صورة 10"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.45 PM (1).jpeg" alt="صورة 11"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.45 PM.jpeg" alt="صورة 12"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.45 PM.jpeg" alt="صورة 13"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.53 PM (1).jpeg" alt="صورة 14"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.53 PM (2).jpeg" alt="صورة 15"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.53 PM.jpeg" alt="صورة 16"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.54 PM (1).jpeg" alt="صورة 17"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.54 PM (2).jpeg" alt="صورة 18"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.54 PM (3).jpeg" alt="صورة 19"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.54 PM.jpeg" alt="صورة 20"></div>
+     <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.55 PM (2).jpeg" alt="صورة 2"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.55 PM (2).jpeg" alt="صورة 3"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.55 PM.jpeg" alt="صورة 4"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.56 PM (1).jpeg" alt="صورة 5"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.56 PM (1).jpeg" alt="صورة 6"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.56 PM.jpeg" alt="صورة 7"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.57 PM.jpeg" alt="صورة 8"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.17.59 PM.jpeg" alt="صورة 9"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.18.01 PM (1).jpeg" alt="صورة 10"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.18.01 PM (2).jpeg" alt="صورة 11"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.18.02 PM.jpeg" alt="صورة 12"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.18.04 PM.jpeg" alt="صورة 13"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.18.08 PM (1).jpeg" alt="صورة 14"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.18.08 PM (3).jpeg" alt="صورة 15"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.18.08 PM.jpeg" alt="صورة 16"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.18.09 PM (3).jpeg" alt="صورة 17"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.18.09 PM.jpeg" alt="صورة 18"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.18.10 PM (2).jpeg" alt="صورة 19"></div>
+      <div class="card"><img src="photo/WhatsApp Image 2026-01-30 at 6.18.11 PM (2).jpeg" alt="صورة 20"></div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 
+  </footer>
+
+</body>
+</html>
+
+  <nav>
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  
+  <a href="settings.html">Settings</a>
+</nav>
+

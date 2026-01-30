@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Darsh Mohamed</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fafafa;
+      color: #222;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(255, 255, 255, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      color: #0077cc;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 3rem 2rem;
+      gap: 2rem;
+    }
+
+    .contact-form {
+      flex: 1 1 400px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .contact-form h2 {
+      margin-bottom: 1rem;
+    }
+
+    .contact-form label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: #0077cc;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #005fa3;
+    }
+
+    .social-links {
+      flex: 1 1 250px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .social-card {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+    }
+
+    .social-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+
+    .facebook .social-icon {
+      background-color: #1877f2;
+    }
+
+    .whatsapp .social-icon {
+      background-color: #25d366;
+    }
+
+    .instagram .social-icon {
+      background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f0f0f0;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>M-darsh</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="setting.html">Settings</a>
+    </nav>
+  </header>
+
+  <section class="contact-container">
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form action="mailto:mohamedelrsam@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/18EKSoQ9Wp/" target="_blank" class="social-card facebook">
+        <div class="social-icon">F</div>
+        Facebook
+      </a>
+      <a href="https://wa.me/201152498922" target="_blank" class="social-card whatsapp">
+        <div class="social-icon">W</div>
+        WhatsApp
+      </a>
+      <a href="https://www.instagram.com/mohamed.elrsam?igsh=ejludnU4MDd2a2Rm" target="_blank" class="social-card instagram">
+        <div class="social-icon">I</div>
+        Instagram
+      </a>
+      <p>00201152498922</p>
+      <p>00201098390423</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; https://hmztzyadtarq-wq.github.io/CP-tarek/ maker
+    2026 tarek wael
+  </footer>
+
+</body>
+</html>
+
