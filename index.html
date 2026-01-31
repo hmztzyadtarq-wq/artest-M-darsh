@@ -39,9 +39,10 @@
       gap: 0.5rem;
     }
 
-    nav a::before {
-      content: "🔗"; /* أيقونة افتراضية */
-      font-size: 1rem;
+    nav svg {
+      width: 18px;
+      height: 18px;
+      fill: #fff;
     }
 
     /* Hero Section */
@@ -127,9 +128,18 @@
 
   <header>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="contact.html" class="active">Contact</a>
-      <a href="setting.html">Settings</a>
+      <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3l9 9h-3v9h-12v-9h-3z"/></svg>
+        Home
+      </a>
+      <a href="contact.html" class="active">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h16v16h-16z" fill="none"/><path d="M20 4h-16v16h16v-16zm-2 2v.511l-6 4.5-6-4.5v-.511h12zm-12 12v-9.489l6 4.5 6-4.5v9.489h-12z"/></svg>
+        Contact
+      </a>
+      <a href="setting.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.14 12.936c.036-.303.06-.61.06-.936s-.024-.633-.07-.936l2.03-1.578c.18-.141.24-.39.12-.6l-1.92-3.312c-.12-.21-.36-.3-.6-.24l-2.39.96c-.5-.39-1.05-.705-1.65-.93l-.36-2.52c-.03-.24-.24-.42-.48-.42h-3.84c-.24 0-.45.18-.48.42l-.36 2.52c-.6.225-1.14.54-1.65.93l-2.39-.96c-.24-.09-.48.03-.6.24l-1.92 3.312c-.12.21-.06.459.12.6l2.03 1.578c-.045.303-.07.61-.07.936s.024.633.07.936l-2.03 1.578c-.18.141-.24.39-.12.6l1.92 3.312c.12.21.36.3.6.24l2.39-.96c.5.39 1.05.705 1.65.93l.36 2.52c.03.24.24.42.48.42h3.84c.24 0 .45-.18.48-.42l.36-2.52c.6-.225 1.14-.54 1.65-.93l2.39.96c.24.09.48-.03.6-.24l1.92-3.312c.12-.21.06-.459-.12-.6l-2.03-1.578zm-7.14 2.064c-1.656 0-3-1.344-3-3s1.344-3 3-3 3 1.344 3 3-1.344 3-3 3z"/></svg>
+        Settings
+      </a>
     </nav>
   </header>
 
@@ -140,30 +150,74 @@
     <h1>Artist: M-Darsh</h1>
     <p>Exploring emotions and stories through colors and brushstrokes.</p>
     <nav>
-      <a href="contact.html" class="active">📧 Contact With M-Darsh</a>
+      <a href="contact.html" class="active">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h16v16h-16z" fill="none"/><path d="M20 4h-16v16h16v-16zm-2 2v.511l-6 4.5-6-4.5v-.511h12zm-12 12v-9.489l6 4.5 6-4.5v9.489h-12z"/></svg>
+        Contact With M-Darsh
+      </a>
     </nav>
-  </section>
-
   <section class="gallery">
-    <img src="photo/WhatsApp Image 2026-01-30 at 6.04.18 PM.jpeg" alt="Sea Turtle Painting" />
-    <img src="photo/WhatsApp Image 2026-01-30 at 6.18.13 PM.jpeg" alt="Volvo Truck Painting" />
-    <img src="photo/WhatsApp Image 2026-01-30 at 6.18.13 PM (2).jpeg" alt="French Bulldog Painting" />
-    <img src="photo/WhatsApp Image 2026-01-30 at 6.18.12 PM.jpeg" alt="Gorilla in Tropical Shirt" />
-    <img src="photo/WhatsApp Image 2026-01-30 at 6.18.11 PM.jpeg" alt="Gangster Duck Painting" />
-    <img src="photo/WhatsApp Image 2026-01-30 at 6.18.11 PM (1).jpeg" alt="Sea Turtle Underwater" />
-    <img src="photo/WhatsApp Image 2026-01-30 at 6.18.08 PM (1).jpeg" alt="African Woman Profile" />
-    <img src="photo/WhatsApp Image 2026-01-30 at 6.18.08 PM.jpeg" alt="Spider-Man Painting" />
-    <!-- باقي الصور زي ما انت عاملها -->
-  </section>
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.04.18 PM.jpeg" alt="Sea Turtle Painting" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.13 PM.jpeg" alt="Volvo Truck Painting" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.13 PM (2).jpeg" alt="French Bulldog Painting" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.12 PM.jpeg" alt="Gorilla in Tropical Shirt" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.11 PM.jpeg" alt="Gangster Duck Painting" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.11 PM (1).jpeg" alt="Sea Turtle Underwater" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.08 PM (1).jpeg" alt="African Woman Profile" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.08 PM.jpeg" alt="Spider-Man Painting" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.09 PM (1).jpeg" alt="صورة 1" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.04.19 PM.jpeg" alt="صورة 2" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.04.20 PM.jpeg" alt="صورة 3" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.30 PM.jpeg" alt="صورة 4" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.31 PM (1).jpeg" alt="صورة 5" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.31 PM.jpeg" alt="صورة 6" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.38 PM.jpeg" alt="صورة 7" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.40 PM.jpeg" alt="صورة 8" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.43 PM.jpeg" alt="صورة 9" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.44 PM (1).jpeg" alt="صورة 10" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.45 PM (1).jpeg" alt="صورة 11" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.45 PM.jpeg" alt="صورة 12" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.45 PM.jpeg" alt="صورة 13" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.53 PM (1).jpeg" alt="صورة 14" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.53 PM (2).jpeg" alt="صورة 15" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.53 PM.jpeg" alt="صورة 16" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.54 PM (1).jpeg" alt="صورة 17" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.54 PM (2).jpeg" alt="صورة 18" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.54 PM (3).jpeg" alt="صورة 19" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.54 PM.jpeg" alt="صورة 20" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.55 PM (2).jpeg" alt="صورة 21" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.55 PM (2).jpeg" alt="صورة 22" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.55 PM.jpeg" alt="صورة 23" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.56 PM (1).jpeg" alt="صورة 24" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.56 PM (1).jpeg" alt="صورة 25" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.56 PM.jpeg" alt="صورة 26" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.57 PM.jpeg" alt="صورة 27" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.17.59 PM.jpeg" alt="صورة 28" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.01 PM (1).jpeg" alt="صورة 29" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.01 PM (2).jpeg" alt="صورة 30" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.02 PM.jpeg" alt="صورة 31" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.04 PM.jpeg" alt="صورة 32" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.08 PM (1).jpeg" alt="صورة 33" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.08 PM (3).jpeg" alt="صورة 34" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.08 PM.jpeg" alt="صورة 35" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.09 PM (3).jpeg" alt="صورة 36" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.09 PM.jpeg" alt="صورة 37" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.10 PM (2).jpeg" alt="صورة 38" />
+  <img src="photo/WhatsApp Image 2026-01-30 at 6.18.11 PM (2).jpeg" alt="صورة 39" />
+</section>
 
-  <footer>
-    &copy; Darsh Mohamed Portfolio
+ <footer>
+    This website was made by
+    &copy; https://hmztzyadtarq-wq.github.io/CP-tarek/
   </footer>
 
 </body>
 </html>
 
+
+
+
  
+
 
 
 
